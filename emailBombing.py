@@ -1,8 +1,9 @@
-"""
-    Copyright : Mahid
-    Year : 2018
-    Code your freedom.
-"""
+#!/usr/bin/python
+#Copyright : Mahid
+#This code for education purpose only.
+#Use it at your own risk !!!
+#Code your freedom
+
 import smtplib
 import mimetypes
 from email.MIMETEXT import MIMETEXT

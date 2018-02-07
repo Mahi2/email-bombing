@@ -28,4 +28,8 @@ class SMTP(object):
             time.sleep(3)
             sys.exit(1)
     
+    def buildemail(self):
+        print(buildmail())
+        
+    
     

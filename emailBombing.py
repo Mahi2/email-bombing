@@ -11,12 +11,12 @@ from email.MIMETEXT import MIMETEXT
 class SMTP(object):
     
     def title(self):
-        print("TITRE : PYTHON MAIL BOMBER ")
+        print("TITRE : PYTHON MAIL BOMBER by mahid_hm")
     
     def SMTPconnect(self):
-        print("SMTPconnect()")
+        print ("Nous sommes dans SMTPconnect") #list of SMTP server - http://www.e-eeasy.com/SMTPServerList.aspx
         self.smtpserver = raw_input("\nEntrez le nom du serveur SMTP : ")
-        self.smtpport = input("Entrez le numéro du port : ")
+        self.smtpport = input("Entrez le numéro du port (souvent c'est 25 ou 465): ")
 
         try:
             self.mailServer = smtplib.SMTP(self.smtpserver, self.smtpport)

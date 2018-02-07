@@ -30,6 +30,30 @@ class SMTP(object):
     
     def buildemail(self):
         print(buildmail())
-        
+        self.From = raw_input("\nDe : ")
+        self.To = raw_input("\nA : ")
+        self.Subject = raw_input("\nSujet : ")
+        self.Message = raw_input("\nVotre message : ")
+
+        mensje = MIMETEXT(self.Message)
+        mensaje['From'] = self.From
+        mensaje['To'] = self.To
+        mensaje['Subject'] = self.Subject
+        self.ammount = input("Numéro Spam : ")
+        x = 0
+        while x < self.ammount:
+            self.mailServer.sendmail(self.From, self.To, mensaje.as_string())
+            x+=1
+        print("Envoyé ")
+        time.sleep(10)
+        print("Le message a été envoyé :) ")
+        print("Suivez moi sur twitter @mahid_hm, youtube Henrique Mukanda, github Mahi2")
+
+if __name__ == "__main" :
+    s = SMTP()
+    s.title()
+    s.SMTPconnect()
+    s.buildemail()
+
     
     

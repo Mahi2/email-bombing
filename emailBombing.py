@@ -1,3 +1,8 @@
+"""
+    Copyright : Mahid
+    Year : 2018
+    Code your freedom.
+"""
 import smtplib
 import mimetypes
 from email.MIMETEXT import MIMETEXT
